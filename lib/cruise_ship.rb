@@ -8,8 +8,8 @@
 
 def select_winner(passengers)
 passengers.each do |key, value|
-  if key == "suite_a" && value.first == "A"
-    return value
+  if key == "suite_a" && value[0]
+       return value
 end
 end
 end
