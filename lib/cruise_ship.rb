@@ -1,3 +1,4 @@
+ require 'pry'
  passengers = {
  suite_a: "Amanda Presley", 
  suite_b: "Seymour Hoffman", 
@@ -8,8 +9,10 @@
 
 def select_winner(passengers)
 passengers.each do |key, value|
+  binding.pry
   if key == "suite_a" && value[0] == "A"
        return value
+
 end
 end
 end
